@@ -43,12 +43,12 @@ This is the instruction most likely to be violated, so treat it as load-bearing 
 |---|---|---|
 | Compare 2–3 named funds | **400–600 words** | One table, 3–6 bullets of trade-offs, a recommendation with its condition |
 | A single portfolio question — "should I add EM?", "is 60/40 still right?" | **300–500 words** | Direct answer first, then reasoning, then what would change your mind |
-| "Screen for…" / "find me…" | **table + ~400 words** | Shortlist table, 3–7 core candidates marked, one line per cut |
+| "Screen for…" / "find me…" | **table + ~500 words** | Ten candidates per asset class in the table, 3–5 marked as recommended, one line per cut |
 | "Report", "memo", "full analysis", or a portfolio from scratch | as long as it needs | The seven-section structure — read `references/report-template.md` |
 
-Those word counts are targets, not walls, but if you are at double one of them for anything other than a report, you have misjudged the question. For a casual two-fund comparison, treat **600 words as a hard ceiling** unless he asked to expand — cut secondary digressions before adding another header.
+Those word counts are targets, not walls, but if you are at double one of them for anything other than a report, you have misjudged the question. Table rows don't count against the budget — a ten-row screening table plus tight prose is the intended shape, not a reason to write more.
 
-Two habits that keep this honest: answer at the smaller size and *offer* to expand ("want the full memo, with shortlist tables and allocation models?"), and resist adding a section merely because you have something true to say about it. Depth he did not ask for is not a bonus. One comparison table plus a short conditional recommendation is enough; park estate-tax essays and multi-scenario portfolios behind the expand offer.
+Two habits that keep this honest: answer at the smaller size and *offer* to expand ("want the full memo, with shortlist tables and allocation models?"), and resist adding a section merely because you have something true to say about it. Depth he did not ask for is not a bonus.
 
 The screening, deep-dive, and portfolio-construction specifications live in `references/analysis-methods.md` — read that file when the task actually calls for that depth. It is kept out of this file deliberately so it does not pull short answers toward being long ones.
 
@@ -57,7 +57,7 @@ The screening, deep-dive, and portfolio-construction specifications live in `ref
 TER, AUM, duration, yield, credit breakdown, index methodology and sometimes domicile all change. Figures produced from memory are wrong in ways that look plausible, and he may act on them at IBKR. That is the failure mode that would make this skill worse than useless.
 
 - **Search before quoting any figure.** Issuer pages (iShares, Vanguard, SPDR, Amundi, Xtrackers) first; justETF, Morningstar or the exchange listing second. Never a forum or blog for a number.
-- **Prefer the issuer over aggregators when they disagree**, and say so when they did. Aggregator data lags share-class changes — a live test of this skill caught a database showing 0.14% for a Vanguard UCITS share class whose own factsheet said 0.19%.
+- **When sources disagree, report both and say which you used — don't silently pick.** The issuer is usually right, but not always: factsheet PDFs are published on a quarterly cycle and lag mid-quarter fee changes, so a fresh aggregator figure can beat a stale official one. A live test of this skill hit exactly that — Vanguard cut the FTSE All-World OCF to 0.14% effective 28 July 2026 while its own 30 June factsheets still printed 0.19%. Check the effective date of the document, not just its provenance, and when a fee change is in play tell him to confirm on the IBKR fund page before sizing a trade.
 - **Date-stamp every table**: `Data as of <YYYY-MM-DD>, sourced from issuer factsheets.`
 - **Write `n/v` for anything you could not verify**, and list those fields at the end. A gap is honest; a plausible guess is not.
 - **Structural facts are safer than live ones.** Index tracked, domicile, replication method and distribution policy change rarely, so reasoning from them while you confirm is fine. TER, AUM, duration and yield always need a look.

@@ -9,9 +9,9 @@ Personal project: Global Retirement ETF Strategy (data/analytics + Cursor skill)
 | `src/` | Application / skill code only (`retirement-etf-analyst/`) |
 | `scripts/` | Runnable helpers (`.sh`, `.zsh`, `.command`) — create when needed |
 | `config/` | Non-secret settings — create when needed |
-| `data/` | CSV, Excel, exports, raw inputs (`data/raw`, `data/processed` as helpful) |
+| `data/` | CSV, Excel, exports, raw inputs; saved portfolio memos under `data/processed/` |
 | `assets/` | Images, icons, logos — create when needed |
-| `docs/` | Guides, design notes; AI prompts go in `docs/prompts/` |
+| `docs/` | Guides, design notes; AI prompts go in `docs/prompts/` (not analysis memos) |
 | `tests/` | Tests and eval runs only |
 | `archive/` | Obsolete files kept for reference (do not delete casually) |
 

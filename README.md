@@ -26,6 +26,7 @@ Personal research project for a Brazil-resident, already-retired investor: build
 | `docs/prompts/` | Superseded historical prompts |
 | `docs/eval-runs.md` | How to read/reproduce eval artifacts |
 | `data/raw/` | Excel inputs |
+| `data/processed/` | Saved portfolio memos / analysis exports |
 | `tests/eval-runs/` | Eval history (prefer over embedded HTML) |
 | `archive/` | Older packages and reviews (see `archive/README.md`) |
 
