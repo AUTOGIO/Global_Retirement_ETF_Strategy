@@ -1,0 +1,6 @@
+Sleeve,Fund Name,LSE Ticker,ISIN,Domicile,Structure,Distribution,TER %,Target Weight %,Target USD,Order Currency,Exchange,Tranches,Live Price USD (fill at execution),Shares to Buy (=Target USD / Price rounded down),Actual USD Filled,Rebalance Lower Band %,Rebalance Upper Band %
+Global Equity,Vanguard FTSE All-World UCITS ETF (USD) Accumulating,VWRA,IE00BK5BQT80,Ireland,UCITS ETF,Accumulating,0.14,60,120000,USD,LSE,3 x 40000,,,,55,65
+Inflation-Linked Bonds,iShares USD TIPS UCITS ETF USD (Acc),ITPS,IE00B1FZSC47,Ireland,UCITS ETF,Accumulating,0.10,15,30000,USD,LSE,1,,,,10,20
+Nominal Bonds,iShares Core Global Aggregate Bond UCITS ETF USD Hedged (Acc),AGGU,IE00BZ043R46,Ireland,UCITS ETF,Accumulating,0.10,15,30000,USD,LSE,1,,,,10,20
+Real Asset,iShares Physical Gold ETC,SGLN / IGLN - VERIFY USD LINE,IE00B4ND3602,Ireland,ETC (physically allocated),Accumulating (no distribution),0.12,10,20000,USD,LSE,1,,,,5,15
+TOTAL,,,,,,,0.126,100,200000,,,,,,,,

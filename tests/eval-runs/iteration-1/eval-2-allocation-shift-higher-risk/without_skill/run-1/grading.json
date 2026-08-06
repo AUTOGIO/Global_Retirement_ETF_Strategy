@@ -1,0 +1,51 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-allocation-shift-higher-risk",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "States a specific new target mix",
+      "passed": true,
+      "evidence": "70/30 stated"
+    },
+    {
+      "text": "Grounds the call in current yield/valuation data that was searched, with citations",
+      "passed": true,
+      "evidence": "14 source URLs with Aug-2026 data"
+    },
+    {
+      "text": "Gives concrete drawdown implications rather than vague reassurance",
+      "passed": false,
+      "evidence": "Discusses risk qualitatively; no concrete peak-to-trough figure"
+    },
+    {
+      "text": "Prefers contribution-based rebalancing over selling to rebalance",
+      "passed": true,
+      "evidence": "Mentions contribution-based rebalancing"
+    },
+    {
+      "text": "Does not silently increase the number of holdings",
+      "passed": true,
+      "evidence": "Ticker count held"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": false,
+      "evidence": "Leaks 'Lei 14.754', 'R$35', 'aliquota', 'carne-leao'"
+    },
+    {
+      "text": "Carries a date stamp on the market data used",
+      "passed": false,
+      "evidence": "No date stamp on the market data used"
+    }
+  ],
+  "passed": 4,
+  "total": 7,
+  "pass_rate": 0.571,
+  "summary": {
+    "pass_rate": 0.571,
+    "passed": 4,
+    "failed": 3,
+    "total": 7
+  }
+}

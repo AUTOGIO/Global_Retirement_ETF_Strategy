@@ -1,0 +1,71 @@
+Below is a concise list of 15 solid sources (full URLs) that cover ETF basics, trading, creation/redemption, arbitrage, and risks.[1][2][3][4][5][6][7][8][9][10][11][12]
+
+## Core ETF Basics
+
+1. Wikipedia – Exchange‑Traded Fund  
+   https://en.wikipedia.org/wiki/Exchange-traded_fund[2]
+
+2. Investopedia – Exchange‑Traded Fund (ETF): What It Is and How to Invest  
+   https://www.investopedia.com/terms/e/etf.asp[1]
+
+3. U.S. Investor.gov – Exchange‑Traded Funds (ETFs)  
+   https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-2[13]
+
+4. Investor.gov Glossary – Exchange‑Traded Fund (ETF)  
+   https://www.investor.gov/introduction-investing/investing-basics/glossary/exchange-traded-fund-etf[14]
+
+5. Charles Schwab – What is an ETF (Exchange‑Traded Fund)?  
+   https://www.schwab.com/etfs/understand-etfs[6]
+
+6. JustETF Academy – Exchange‑Traded Funds: What is an ETF?  
+   https://www.justetf.com/en/academy/what-is-an-etf.html[15]
+
+7. TD Direct Investing – What is an Exchange Traded Fund (ETF)?  
+   https://www.td.com/ca/en/investing/direct-investing/learn-to-invest/etfs-explained[7]
+
+8. RBC Global Asset Management – What is an ETF? A Guide to Getting Started  
+   https://www.rbcgam.com/en/ca/learn-plan/types-of-investments/what-is-an-exchange-traded-fund-etf/detail[11]
+
+## Creation / Redemption & Arbitrage Microstructure
+
+9. BIS Quarterly Review – The Anatomy of Bond ETF Arbitrage  
+   https://www.bis.org/publ/qtrpdf/r_qt2103d.htm[5]
+
+10. ESRB Working Paper – ETF Arbitrage Under Liquidity Mismatch  
+   https://www.esrb.europa.eu/pub/pdf/wp/esrb.wp59.en.pdf[10]
+
+11. Oxford Ledge – Creation, Redemption, and the Arbitrage That Holds an ETF Together  
+   https://www.oxfordledge.com/learn/etf-101/creation-redemption-arbitrage/[3]
+
+12. Dividend Vision – ETF Creation and Redemption Explained for Investors  
+   https://www.dividendvision.com/learn/etf-creation-redemption[4]
+
+13. Alpha Learning – ETF Primary‑Market Arbitrage: Creation/Redemption Baskets and NAV Gaps  
+   https://stockalpha.ai/alpha-learning/etf-primary-market-arbitrage-creationredemption-baskets-and-nav-gaps[8]
+
+14. Legal Clarity – How ETF Arbitrage Works: The Creation and Redemption Process  
+   https://legalclarity.org/how-etf-arbitrage-works-the-creation-and-redemption-process/[12]
+
+## General Education / Risk Overview
+
+15. Charles Schwab Video – Investing Basics: ETFs  
+   https://www.youtube.com/watch?v=Tv4pkivGvdU[9]
+
+If you want, I can next build a structured reading roadmap (sequence + what to extract from each) tailored to ETF microstructure and trading at IBKR.
+
+Sources
+[1] Exchange-Traded Fund (ETF): What It Is and How to Invest https://www.investopedia.com/terms/e/etf.asp
+[2] Exchange-traded fund - Wikipedia https://en.wikipedia.org/wiki/Exchange-traded_fund
+[3] Creation, Redemption, and the Arbitrage That Holds an ETF ... https://www.oxfordledge.com/learn/etf-101/creation-redemption-arbitrage/
+[4] ETF Creation and Redemption Explained for Investors | Dividend Vision https://www.dividendvision.com/learn/etf-creation-redemption
+[5] The anatomy of bond ETF arbitrage https://www.bis.org/publ/qtrpdf/r_qt2103d.htm
+[6] What is an ETF (Exchange-Traded Fund)? https://www.schwab.com/etfs/understand-etfs
+[7] What is an Exchange Traded Fund (ETF)? https://www.td.com/ca/en/investing/direct-investing/learn-to-invest/etfs-explained
+[8] ETF Primary-Market Arbitrage: Creation/Redem... | Alpha Learning https://stockalpha.ai/alpha-learning/etf-primary-market-arbitrage-creationredemption-baskets-and-nav-gaps
+[9] Investing Basics: ETFs https://www.youtube.com/watch?v=Tv4pkivGvdU
+[10] ETF arbitrage under liquidity mismatch https://www.esrb.europa.eu/pub/pdf/wp/esrb.wp59.en.pdf
+[11] What is an ETF? A guide to getting started https://www.rbcgam.com/en/ca/learn-plan/types-of-investments/what-is-an-exchange-traded-fund-etf/detail
+[12] How ETF Arbitrage Works: The Creation and Redemption Process https://legalclarity.org/how-etf-arbitrage-works-the-creation-and-redemption-process/
+[13] Exchange-Traded Funds (ETFs) https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-2
+[14] Exchange-Traded Fund (ETF) https://www.investor.gov/introduction-investing/investing-basics/glossary/exchange-traded-fund-etf
+[15] Exchange-traded funds: What is an ETF? https://www.justetf.com/en/academy/what-is-an-etf.html

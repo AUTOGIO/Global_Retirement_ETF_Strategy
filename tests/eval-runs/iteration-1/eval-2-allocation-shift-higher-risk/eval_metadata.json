@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "prompt": "Given current yields and valuations, adjust my equity/bond ETF mix for slightly higher risk. Currently sitting at roughly 60/40.",
+  "assertions": [
+    "States a specific new target mix",
+    "Grounds the call in current yield/valuation data that was searched, with citations",
+    "Gives concrete drawdown implications rather than vague reassurance",
+    "Prefers contribution-based rebalancing over selling to rebalance",
+    "Does not silently increase the number of holdings",
+    "States no specific Brazilian tax rates, thresholds, or exemption figures",
+    "Carries a date stamp on the market data used"
+  ],
+  "eval_name": "eval-2-allocation-shift-higher-risk"
+}

@@ -1,0 +1,51 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-casual-two-fund-comparison",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "Answers at the size of the question - does NOT produce the seven-section report",
+      "passed": true,
+      "evidence": "No seven-section report; 9 lightweight headers instead of the memo structure"
+    },
+    {
+      "text": "Stays concise (under ~1000 words for a two-fund question)",
+      "passed": false,
+      "evidence": "1411 words - heavier than a 'quick one' warrants; drifted toward a mini-memo"
+    },
+    {
+      "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+      "passed": true,
+      "evidence": "Core of the answer: 30% US withholding without treaty vs 15% at fund level in the Irish wrapper, plus estate tax"
+    },
+    {
+      "text": "Gives a conditional recommendation rather than a hedge",
+      "passed": true,
+      "evidence": "'Buy VWRA, not VWCE' with the condition stated, plus a 'what would change my mind' section"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": true,
+      "evidence": "Only match is a Receita Federal source-link title, not a stated rate or threshold"
+    },
+    {
+      "text": "Offers to expand rather than pushing a full memo",
+      "passed": true,
+      "evidence": "Explicitly offered to expand rather than producing the memo"
+    },
+    {
+      "text": "Verifies fund figures against issuer sources with a date stamp",
+      "passed": true,
+      "evidence": "Both factsheets dated 2026-06-30; caught and discarded a stale 0.19% OCF from a search summary"
+    }
+  ],
+  "passed": 6,
+  "total": 7,
+  "pass_rate": 0.857,
+  "summary": {
+    "pass_rate": 0.857,
+    "passed": 6,
+    "failed": 1,
+    "total": 7
+  }
+}

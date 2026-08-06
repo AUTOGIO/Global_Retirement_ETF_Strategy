@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "prompt": "quick one - is VWCE better than VT for me? i keep going back and forth on this",
+  "assertions": [
+    "Answers at the size of the question - does NOT produce the seven-section report",
+    "Stays concise (under ~1000 words for a two-fund question)",
+    "Addresses the US-domicile vs Irish UCITS trade-off",
+    "Gives a conditional recommendation rather than a hedge",
+    "States no specific Brazilian tax rates, thresholds, or exemption figures",
+    "Offers to expand rather than pushing a full memo",
+    "Verifies fund figures against issuer sources with a date stamp"
+  ],
+  "eval_name": "eval-1-casual-two-fund-comparison"
+}

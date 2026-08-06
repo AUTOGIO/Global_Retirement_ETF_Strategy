@@ -1,0 +1,51 @@
+{
+  "eval_id": 0,
+  "eval_name": "eval-0-full-report-3etf-core",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "Produces all seven report sections (exec summary, investor context, shortlists, detailed notes, proposed portfolio, Brazil tax, action checklist)",
+      "passed": true,
+      "evidence": "All seven sections present (programmatic scan: 7/7)"
+    },
+    {
+      "text": "Screening table carries an explicit 'data as of <date>' stamp",
+      "passed": true,
+      "evidence": "'Data as of 2026-08-05, sourced from issuer factsheets' present under tables"
+    },
+    {
+      "text": "Allocation weights sum to 100%",
+      "passed": true,
+      "evidence": "Three allocation models, each summing to exactly 100.0%"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": true,
+      "evidence": "Zero matches for Brazilian rate/threshold patterns (Lei, R$, aliquota, carne-leao)"
+    },
+    {
+      "text": "Cites real source URLs",
+      "passed": true,
+      "evidence": "16 unique source URLs, issuer factsheets predominant"
+    },
+    {
+      "text": "Marks unverified fields as n/v rather than guessing",
+      "passed": true,
+      "evidence": "n/v used for VAGU/BNDW duration, Amundi index name/AUM, MSCI World geography; listed explicitly at end of Sources"
+    },
+    {
+      "text": "Gives concrete drawdown figures rather than vague volatility language",
+      "passed": true,
+      "evidence": "-37% to -40% for 2008-style; -15% to -18% for 2022-style inflationary shock, with the bond-sleeve failure case named"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 7,
+    "failed": 0,
+    "total": 7
+  }
+}

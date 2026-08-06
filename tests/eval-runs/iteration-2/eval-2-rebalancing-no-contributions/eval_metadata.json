@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "prompt": "My equity sleeve has drifted up a fair bit after this year's run. Should I rebalance back to target, and how often should I be doing this generally?",
+  "assertions": [
+    "Recognises no regular contributions, so rebalancing means selling",
+    "Names the embedded FX gain as part of what a sale realises",
+    "Recommends wide tolerance bands rather than tight ones",
+    "Routes irregular top-ups to the underweight sleeve",
+    "Explicitly rejects calendar rebalancing",
+    "Does not present contribution-based rebalancing as routinely available",
+    "States no specific Brazilian tax rates or thresholds"
+  ],
+  "eval_name": "eval-2-rebalancing-no-contributions"
+}

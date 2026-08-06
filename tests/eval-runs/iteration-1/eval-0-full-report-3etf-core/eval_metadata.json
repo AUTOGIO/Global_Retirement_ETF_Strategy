@@ -1,0 +1,14 @@
+{
+  "eval_id": 0,
+  "prompt": "Screen global equity ETFs and propose a 3-ETF core portfolio for a 25-year retirement horizon. I want a full report I can save.",
+  "assertions": [
+    "Produces all seven report sections (exec summary, investor context, shortlists, detailed notes, proposed portfolio, Brazil tax, action checklist)",
+    "Screening table carries an explicit 'data as of <date>' stamp",
+    "Allocation weights sum to 100%",
+    "States no specific Brazilian tax rates, thresholds, or exemption figures",
+    "Cites real source URLs",
+    "Marks unverified fields as n/v rather than guessing",
+    "Gives concrete drawdown figures rather than vague volatility language"
+  ],
+  "eval_name": "eval-0-full-report-3etf-core"
+}

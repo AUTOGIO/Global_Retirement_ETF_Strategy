@@ -1,0 +1,51 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-rebalancing-no-contributions",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Recognises no regular contributions, so rebalancing means selling",
+      "passed": false,
+      "evidence": "Treats it as a standard rebalancing question; no recognition of the missing contribution lever"
+    },
+    {
+      "text": "Names the embedded FX gain as part of what a sale realises",
+      "passed": false,
+      "evidence": "No mention of embedded FX gain"
+    },
+    {
+      "text": "Recommends wide tolerance bands rather than tight ones",
+      "passed": false,
+      "evidence": "Recommends the conventional +/-5pp band - tighter, more taxable events"
+    },
+    {
+      "text": "Routes irregular top-ups to the underweight sleeve",
+      "passed": false,
+      "evidence": "No top-up routing guidance"
+    },
+    {
+      "text": "Explicitly rejects calendar rebalancing",
+      "passed": true,
+      "evidence": "Threshold triggers mentioned alongside semiannual monitoring"
+    },
+    {
+      "text": "Does not present contribution-based rebalancing as routinely available",
+      "passed": true,
+      "evidence": "Does not misapply contribution rebalancing"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": false,
+      "evidence": "Leaks 'Lei 14.754', 'R$35,000'"
+    }
+  ],
+  "passed": 2,
+  "total": 7,
+  "pass_rate": 0.286,
+  "summary": {
+    "pass_rate": 0.286,
+    "passed": 2,
+    "failed": 5,
+    "total": 7
+  }
+}

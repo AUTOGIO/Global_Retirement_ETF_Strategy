@@ -1,0 +1,51 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-casual-two-fund-comparison",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "Answers at the size of the question - no multi-section memo",
+      "passed": true,
+      "evidence": "5 headers, no memo structure"
+    },
+    {
+      "text": "Stays near the 400-600 word target",
+      "passed": false,
+      "evidence": "876 words - above the 400-600 target, though down from 1411 in iteration 1 and now shorter than baseline"
+    },
+    {
+      "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+      "passed": true,
+      "evidence": "~26bp/yr unrecoverable US withholding identified as the deciding factor over TER"
+    },
+    {
+      "text": "Gives a conditional recommendation rather than a hedge",
+      "passed": true,
+      "evidence": "VWCE via the VWRA USD line, conditional on not selling an existing VT position"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": true,
+      "evidence": "Zero rate/threshold matches"
+    },
+    {
+      "text": "Verifies figures against issuer sources with a date stamp",
+      "passed": true,
+      "evidence": "Date-stamped; caught that the May 2026 factsheet 0.19% is superseded by the 28 Jul 2026 KID at 0.14%"
+    },
+    {
+      "text": "Offers to expand rather than pushing a memo",
+      "passed": true,
+      "evidence": "Offered to expand"
+    }
+  ],
+  "passed": 6,
+  "total": 7,
+  "pass_rate": 0.857,
+  "summary": {
+    "pass_rate": 0.857,
+    "passed": 6,
+    "failed": 1,
+    "total": 7
+  }
+}

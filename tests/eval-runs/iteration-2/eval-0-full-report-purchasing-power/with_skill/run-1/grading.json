@@ -1,0 +1,51 @@
+{
+  "eval_id": 0,
+  "eval_name": "eval-0-full-report-purchasing-power",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "Produces all seven report sections",
+      "passed": true,
+      "evidence": "7/7 sections present"
+    },
+    {
+      "text": "Treats this as a real-return mandate with inflation-linked exposure weighed on merit",
+      "passed": true,
+      "evidence": "ITPS at 25% - a real inflation-linked allocation, argued on the 2022 correlation case not as a token sleeve"
+    },
+    {
+      "text": "States the BRL/USD gap explicitly rather than assuming it away",
+      "passed": true,
+      "evidence": "42 BRL/IPCA/Tesouro references; names Tesouro IPCA+ as the instrument this portfolio cannot hold"
+    },
+    {
+      "text": "Proposes band-based rebalancing using top-ups, not a calendar",
+      "passed": true,
+      "evidence": "Wide-band no-calendar policy; 10 band references"
+    },
+    {
+      "text": "Sizes sleeves against the USD 200k figure",
+      "passed": true,
+      "evidence": "Sleeves priced in USD against the 200k base"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": true,
+      "evidence": "Zero rate/threshold matches"
+    },
+    {
+      "text": "Date-stamped tables, n/v for unverified fields, real source URLs",
+      "passed": true,
+      "evidence": "Stamped 2026-08-05, n/v on six fields, 13 source URLs"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 7,
+    "failed": 0,
+    "total": 7
+  }
+}

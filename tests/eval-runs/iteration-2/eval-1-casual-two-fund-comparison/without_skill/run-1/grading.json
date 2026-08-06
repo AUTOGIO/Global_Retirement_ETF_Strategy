@@ -1,0 +1,51 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-casual-two-fund-comparison",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Answers at the size of the question - no multi-section memo",
+      "passed": true,
+      "evidence": "8 headers but no memo structure"
+    },
+    {
+      "text": "Stays near the 400-600 word target",
+      "passed": false,
+      "evidence": "1020 words"
+    },
+    {
+      "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+      "passed": true,
+      "evidence": "Covers withholding and estate tax"
+    },
+    {
+      "text": "Gives a conditional recommendation rather than a hedge",
+      "passed": true,
+      "evidence": "Recommends VWRA with a switching-cost caveat"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": false,
+      "evidence": "Leaks 'Lei 14.754' and 'R$35'"
+    },
+    {
+      "text": "Verifies figures against issuer sources with a date stamp",
+      "passed": false,
+      "evidence": "Zero URLs; self-declared that all figures are from memory"
+    },
+    {
+      "text": "Offers to expand rather than pushing a memo",
+      "passed": false,
+      "evidence": "No offer to expand"
+    }
+  ],
+  "passed": 3,
+  "total": 7,
+  "pass_rate": 0.429,
+  "summary": {
+    "pass_rate": 0.429,
+    "passed": 3,
+    "failed": 4,
+    "total": 7
+  }
+}

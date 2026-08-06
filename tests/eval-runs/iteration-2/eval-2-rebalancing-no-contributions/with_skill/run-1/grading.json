@@ -1,0 +1,51 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-rebalancing-no-contributions",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "Recognises no regular contributions, so rebalancing means selling",
+      "passed": true,
+      "evidence": "Opens by naming that the textbook answer assumes a contribution schedule he does not have"
+    },
+    {
+      "text": "Names the embedded FX gain as part of what a sale realises",
+      "passed": true,
+      "evidence": "Names the embedded FX gain and notes it can be the larger half of the BRL-reported gain"
+    },
+    {
+      "text": "Recommends wide tolerance bands rather than tight ones",
+      "passed": true,
+      "evidence": "+/-10pp bands, explicitly contrasted with the conventional +/-5pp"
+    },
+    {
+      "text": "Routes irregular top-ups to the underweight sleeve",
+      "passed": true,
+      "evidence": "Step 1 is routing the next top-up to the most underweight sleeve"
+    },
+    {
+      "text": "Explicitly rejects calendar rebalancing",
+      "passed": true,
+      "evidence": "'not on a calendar in any case' in the opening line"
+    },
+    {
+      "text": "Does not present contribution-based rebalancing as routinely available",
+      "passed": true,
+      "evidence": "Correctly frames top-ups as an occasional lever, not a routine one"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": true,
+      "evidence": "Zero rate/threshold matches"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 7,
+    "failed": 0,
+    "total": 7
+  }
+}

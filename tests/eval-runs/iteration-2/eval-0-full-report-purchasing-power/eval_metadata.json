@@ -1,0 +1,14 @@
+{
+  "eval_id": 0,
+  "prompt": "Build me a core ETF portfolio for the USD 200k. I'm already retired, not taking withdrawals, and the goal is keeping purchasing power over the long run. Full report I can save.",
+  "assertions": [
+    "Produces all seven report sections",
+    "Treats this as a real-return mandate with inflation-linked exposure weighed on merit",
+    "States the BRL/USD gap explicitly rather than assuming it away",
+    "Proposes band-based rebalancing using top-ups, not a calendar",
+    "Sizes sleeves against the USD 200k figure",
+    "States no specific Brazilian tax rates or thresholds",
+    "Date-stamped tables, n/v for unverified fields, real source URLs"
+  ],
+  "eval_name": "eval-0-full-report-purchasing-power"
+}

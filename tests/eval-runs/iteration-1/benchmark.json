@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "skill_name": "retirement-etf-analyst",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-08-06T01:47:06Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 619.0,
+        "tokens": 178305,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces all seven report sections (exec summary, investor context, shortlists, detailed notes, proposed portfolio, Brazil tax, action checklist)",
+          "passed": true,
+          "evidence": "All seven sections present (programmatic scan: 7/7)"
+        },
+        {
+          "text": "Screening table carries an explicit 'data as of <date>' stamp",
+          "passed": true,
+          "evidence": "'Data as of 2026-08-05, sourced from issuer factsheets' present under tables"
+        },
+        {
+          "text": "Allocation weights sum to 100%",
+          "passed": true,
+          "evidence": "Three allocation models, each summing to exactly 100.0%"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": true,
+          "evidence": "Zero matches for Brazilian rate/threshold patterns (Lei, R$, aliquota, carne-leao)"
+        },
+        {
+          "text": "Cites real source URLs",
+          "passed": true,
+          "evidence": "16 unique source URLs, issuer factsheets predominant"
+        },
+        {
+          "text": "Marks unverified fields as n/v rather than guessing",
+          "passed": true,
+          "evidence": "n/v used for VAGU/BNDW duration, Amundi index name/AUM, MSCI World geography; listed explicitly at end of Sources"
+        },
+        {
+          "text": "Gives concrete drawdown figures rather than vague volatility language",
+          "passed": true,
+          "evidence": "-37% to -40% for 2008-style; -15% to -18% for 2022-style inflationary shock, with the bond-sleeve failure case named"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.857,
+        "passed": 6,
+        "failed": 1,
+        "total": 7,
+        "time_seconds": 227.5,
+        "tokens": 89833,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Answers at the size of the question - does NOT produce the seven-section report",
+          "passed": true,
+          "evidence": "No seven-section report; 9 lightweight headers instead of the memo structure"
+        },
+        {
+          "text": "Stays concise (under ~1000 words for a two-fund question)",
+          "passed": false,
+          "evidence": "1411 words - heavier than a 'quick one' warrants; drifted toward a mini-memo"
+        },
+        {
+          "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+          "passed": true,
+          "evidence": "Core of the answer: 30% US withholding without treaty vs 15% at fund level in the Irish wrapper, plus estate tax"
+        },
+        {
+          "text": "Gives a conditional recommendation rather than a hedge",
+          "passed": true,
+          "evidence": "'Buy VWRA, not VWCE' with the condition stated, plus a 'what would change my mind' section"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": true,
+          "evidence": "Only match is a Receita Federal source-link title, not a stated rate or threshold"
+        },
+        {
+          "text": "Offers to expand rather than pushing a full memo",
+          "passed": true,
+          "evidence": "Explicitly offered to expand rather than producing the memo"
+        },
+        {
+          "text": "Verifies fund figures against issuer sources with a date stamp",
+          "passed": true,
+          "evidence": "Both factsheets dated 2026-06-30; caught and discarded a stale 0.19% OCF from a search summary"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 360.1,
+        "tokens": 104509,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States a specific new target mix",
+          "passed": true,
+          "evidence": "65/35 stated explicitly, with 70/30 and an EM tilt considered and declined"
+        },
+        {
+          "text": "Grounds the call in current yield/valuation data that was searched, with citations",
+          "passed": true,
+          "evidence": "Real yields, equity risk premium and fund figures searched; 16 source URLs"
+        },
+        {
+          "text": "Gives concrete drawdown implications rather than vague reassurance",
+          "passed": true,
+          "evidence": "'2008-style event, global equity -50%, bonds +5%' worked through; +2 to +3pp incremental drawdown vs 60/40"
+        },
+        {
+          "text": "Prefers contribution-based rebalancing over selling to rebalance",
+          "passed": true,
+          "evidence": "Contribution-based rebalancing recommended; selling to rebalance explicitly declined"
+        },
+        {
+          "text": "Does not silently increase the number of holdings",
+          "passed": true,
+          "evidence": "Holds ticker count flat at VWRA + AGGU; declined the EM sleeve on complexity grounds"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": true,
+          "evidence": "Zero Brazilian rate/threshold matches"
+        },
+        {
+          "text": "Carries a date stamp on the market data used",
+          "passed": true,
+          "evidence": "Market data date-stamped"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.143,
+        "passed": 1,
+        "failed": 6,
+        "total": 7,
+        "time_seconds": 336.1,
+        "tokens": 69151,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces all seven report sections (exec summary, investor context, shortlists, detailed notes, proposed portfolio, Brazil tax, action checklist)",
+          "passed": false,
+          "evidence": "Produced a 14-section structure of its own devising; only 1/7 expected sections matched"
+        },
+        {
+          "text": "Screening table carries an explicit 'data as of <date>' stamp",
+          "passed": false,
+          "evidence": "No date stamp anywhere in the document"
+        },
+        {
+          "text": "Allocation weights sum to 100%",
+          "passed": false,
+          "evidence": "No parseable allocation table with summing weights"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": false,
+          "evidence": "Leaks: 'Lei 14.754', '15% flat', 'R$2,500', 'R$250,000', 'R$35,000', 'carne-leao', 'US$1M threshold'"
+        },
+        {
+          "text": "Cites real source URLs",
+          "passed": true,
+          "evidence": "21 unique source URLs"
+        },
+        {
+          "text": "Marks unverified fields as n/v rather than guessing",
+          "passed": false,
+          "evidence": "Two data conflicts flagged in prose but no n/v convention; approximate figures published as fact"
+        },
+        {
+          "text": "Gives concrete drawdown figures rather than vague volatility language",
+          "passed": false,
+          "evidence": "No concrete drawdown range given"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.571,
+        "passed": 4,
+        "failed": 3,
+        "total": 7,
+        "time_seconds": 138.1,
+        "tokens": 45724,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Answers at the size of the question - does NOT produce the seven-section report",
+          "passed": true,
+          "evidence": "Short, no report structure"
+        },
+        {
+          "text": "Stays concise (under ~1000 words for a two-fund question)",
+          "passed": true,
+          "evidence": "841 words"
+        },
+        {
+          "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+          "passed": true,
+          "evidence": "Covers the treaty/withholding and estate tax angle"
+        },
+        {
+          "text": "Gives a conditional recommendation rather than a hedge",
+          "passed": true,
+          "evidence": "Recommends VWCE via the VWRA USD line"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": false,
+          "evidence": "Leaks 'Lei 14.754' and 'R$35' as asserted tax facts"
+        },
+        {
+          "text": "Offers to expand rather than pushing a full memo",
+          "passed": false,
+          "evidence": "No offer to expand"
+        },
+        {
+          "text": "Verifies fund figures against issuer sources with a date stamp",
+          "passed": false,
+          "evidence": "Zero source URLs; all figures from memory, no date stamp"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.571,
+        "passed": 4,
+        "failed": 3,
+        "total": 7,
+        "time_seconds": 294.2,
+        "tokens": 62145,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "States a specific new target mix",
+          "passed": true,
+          "evidence": "70/30 stated"
+        },
+        {
+          "text": "Grounds the call in current yield/valuation data that was searched, with citations",
+          "passed": true,
+          "evidence": "14 source URLs with Aug-2026 data"
+        },
+        {
+          "text": "Gives concrete drawdown implications rather than vague reassurance",
+          "passed": false,
+          "evidence": "Discusses risk qualitatively; no concrete peak-to-trough figure"
+        },
+        {
+          "text": "Prefers contribution-based rebalancing over selling to rebalance",
+          "passed": true,
+          "evidence": "Mentions contribution-based rebalancing"
+        },
+        {
+          "text": "Does not silently increase the number of holdings",
+          "passed": true,
+          "evidence": "Ticker count held"
+        },
+        {
+          "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+          "passed": false,
+          "evidence": "Leaks 'Lei 14.754', 'R$35', 'aliquota', 'carne-leao'"
+        },
+        {
+          "text": "Carries a date stamp on the market data used",
+          "passed": false,
+          "evidence": "No date stamp on the market data used"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9523,
+        "stddev": 0.0826,
+        "min": 0.857,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 402.2,
+        "stddev": 199.1165,
+        "min": 227.5,
+        "max": 619.0
+      },
+      "tokens": {
+        "mean": 124215.6667,
+        "stddev": 47414.0088,
+        "min": 89833,
+        "max": 178305
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.4283,
+        "stddev": 0.2471,
+        "min": 0.143,
+        "max": 0.571
+      },
+      "time_seconds": {
+        "mean": 256.1333,
+        "stddev": 104.3446,
+        "min": 138.1,
+        "max": 336.1
+      },
+      "tokens": {
+        "mean": 59006.6667,
+        "stddev": 12024.6802,
+        "min": 45724,
+        "max": 69151
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.52",
+      "time_seconds": "+146.1",
+      "tokens": "+65209"
+    }
+  },
+  "notes": [
+    "METADATA CORRECTED 2026-08-05: runs_per_configuration is 1 (one run per eval\u00d7configuration). Spread figures in the summary are cross-eval variation, not multi-run stddev.",
+    "Date-stamping is a perfect discriminator: 3/3 with the skill, 0/3 without. Same for the n/v convention for unverified fields (3/3 vs 1/3).",
+    "Brazilian tax-rate leakage is the biggest safety win. The baseline asserted specific rates, thresholds and penalty figures ('15% flat', 'Lei 14.754', 'R$2,500-R$250,000', 'US$1M CBE threshold') in all three runs. The skill produced zero asserted rates; its single regex hit was a Receita Federal source-link title, which is correct behaviour.",
+    "Report structure is the clearest single-eval win: 7/7 expected sections with the skill vs 1/7 without, where the baseline invented its own 14-section layout.",
+    "FAILURE TO ADDRESS: output scaling on casual questions. Eval 1 ('quick one - is VWCE better than VT?') produced 1411 words and 9 headers with the skill vs 841 words without. The skill made the short question LONGER. The scaling table exists in SKILL.md but is being outweighed by the depth instructions around it.",
+    "Cost of the skill: roughly 2x tokens and 1.6x wall-clock, driven almost entirely by the mandatory verification searches. On eval 0 that bought a caught error (a search summary reported 0.14% OCF for VWRA where the issuer factsheet says 0.19%), so the spend looks justified on report-grade work; it is less obviously worth it on two-fund comparisons.",
+    "Non-discriminating assertions this round: 'prefers contribution-based rebalancing' passed in 6/6 runs, and 'addresses US vs UCITS domicile' passed in both eval-1 runs. Both are things the model does anyway given the Brazil context; they are not measuring the skill.",
+    "Single run per configuration, so no variance estimate. Treat per-eval deltas as directional."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-allocation-shift-higher-risk",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "States a specific new target mix",
+      "passed": true,
+      "evidence": "65/35 stated explicitly, with 70/30 and an EM tilt considered and declined"
+    },
+    {
+      "text": "Grounds the call in current yield/valuation data that was searched, with citations",
+      "passed": true,
+      "evidence": "Real yields, equity risk premium and fund figures searched; 16 source URLs"
+    },
+    {
+      "text": "Gives concrete drawdown implications rather than vague reassurance",
+      "passed": true,
+      "evidence": "'2008-style event, global equity -50%, bonds +5%' worked through; +2 to +3pp incremental drawdown vs 60/40"
+    },
+    {
+      "text": "Prefers contribution-based rebalancing over selling to rebalance",
+      "passed": true,
+      "evidence": "Contribution-based rebalancing recommended; selling to rebalance explicitly declined"
+    },
+    {
+      "text": "Does not silently increase the number of holdings",
+      "passed": true,
+      "evidence": "Holds ticker count flat at VWRA + AGGU; declined the EM sleeve on complexity grounds"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": true,
+      "evidence": "Zero Brazilian rate/threshold matches"
+    },
+    {
+      "text": "Carries a date stamp on the market data used",
+      "passed": true,
+      "evidence": "Market data date-stamped"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "pass_rate": 1.0,
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 7,
+    "failed": 0,
+    "total": 7
+  }
+}

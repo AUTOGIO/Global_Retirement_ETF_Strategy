@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "skill_name": "retirement-etf-analyst",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-08-06T02:33:48Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 611.9,
+        "tokens": 155754,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces all seven report sections",
+          "passed": true,
+          "evidence": "7/7 sections present"
+        },
+        {
+          "text": "Treats this as a real-return mandate with inflation-linked exposure weighed on merit",
+          "passed": true,
+          "evidence": "ITPS at 25% - a real inflation-linked allocation, argued on the 2022 correlation case not as a token sleeve"
+        },
+        {
+          "text": "States the BRL/USD gap explicitly rather than assuming it away",
+          "passed": true,
+          "evidence": "42 BRL/IPCA/Tesouro references; names Tesouro IPCA+ as the instrument this portfolio cannot hold"
+        },
+        {
+          "text": "Proposes band-based rebalancing using top-ups, not a calendar",
+          "passed": true,
+          "evidence": "Wide-band no-calendar policy; 10 band references"
+        },
+        {
+          "text": "Sizes sleeves against the USD 200k figure",
+          "passed": true,
+          "evidence": "Sleeves priced in USD against the 200k base"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": true,
+          "evidence": "Zero rate/threshold matches"
+        },
+        {
+          "text": "Date-stamped tables, n/v for unverified fields, real source URLs",
+          "passed": true,
+          "evidence": "Stamped 2026-08-05, n/v on six fields, 13 source URLs"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.857,
+        "passed": 6,
+        "failed": 1,
+        "total": 7,
+        "time_seconds": 269.8,
+        "tokens": 79003,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Answers at the size of the question - no multi-section memo",
+          "passed": true,
+          "evidence": "5 headers, no memo structure"
+        },
+        {
+          "text": "Stays near the 400-600 word target",
+          "passed": false,
+          "evidence": "876 words - above the 400-600 target, though down from 1411 in iteration 1 and now shorter than baseline"
+        },
+        {
+          "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+          "passed": true,
+          "evidence": "~26bp/yr unrecoverable US withholding identified as the deciding factor over TER"
+        },
+        {
+          "text": "Gives a conditional recommendation rather than a hedge",
+          "passed": true,
+          "evidence": "VWCE via the VWRA USD line, conditional on not selling an existing VT position"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": true,
+          "evidence": "Zero rate/threshold matches"
+        },
+        {
+          "text": "Verifies figures against issuer sources with a date stamp",
+          "passed": true,
+          "evidence": "Date-stamped; caught that the May 2026 factsheet 0.19% is superseded by the 28 Jul 2026 KID at 0.14%"
+        },
+        {
+          "text": "Offers to expand rather than pushing a memo",
+          "passed": true,
+          "evidence": "Offered to expand"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 76.9,
+        "tokens": 50288,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recognises no regular contributions, so rebalancing means selling",
+          "passed": true,
+          "evidence": "Opens by naming that the textbook answer assumes a contribution schedule he does not have"
+        },
+        {
+          "text": "Names the embedded FX gain as part of what a sale realises",
+          "passed": true,
+          "evidence": "Names the embedded FX gain and notes it can be the larger half of the BRL-reported gain"
+        },
+        {
+          "text": "Recommends wide tolerance bands rather than tight ones",
+          "passed": true,
+          "evidence": "+/-10pp bands, explicitly contrasted with the conventional +/-5pp"
+        },
+        {
+          "text": "Routes irregular top-ups to the underweight sleeve",
+          "passed": true,
+          "evidence": "Step 1 is routing the next top-up to the most underweight sleeve"
+        },
+        {
+          "text": "Explicitly rejects calendar rebalancing",
+          "passed": true,
+          "evidence": "'not on a calendar in any case' in the opening line"
+        },
+        {
+          "text": "Does not present contribution-based rebalancing as routinely available",
+          "passed": true,
+          "evidence": "Correctly frames top-ups as an occasional lever, not a routine one"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": true,
+          "evidence": "Zero rate/threshold matches"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.429,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 468.5,
+        "tokens": 78586,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Produces all seven report sections",
+          "passed": false,
+          "evidence": "1/7 sections; invented a 16-section layout"
+        },
+        {
+          "text": "Treats this as a real-return mandate with inflation-linked exposure weighed on merit",
+          "passed": true,
+          "evidence": "Allocated 15% ITPS plus 10% gold - inflation exposure present"
+        },
+        {
+          "text": "States the BRL/USD gap explicitly rather than assuming it away",
+          "passed": true,
+          "evidence": "28 references; did name the IPCA gap"
+        },
+        {
+          "text": "Proposes band-based rebalancing using top-ups, not a calendar",
+          "passed": false,
+          "evidence": "No band policy; 5 passing band references only"
+        },
+        {
+          "text": "Sizes sleeves against the USD 200k figure",
+          "passed": true,
+          "evidence": "Sized against 200k"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": false,
+          "evidence": "Leaks '15% flat', 'Lei 14.754', 'R$35,000', 'aliquota'"
+        },
+        {
+          "text": "Date-stamped tables, n/v for unverified fields, real source URLs",
+          "passed": false,
+          "evidence": "No date stamp, no n/v convention despite 19 URLs"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.429,
+        "passed": 3,
+        "failed": 4,
+        "total": 7,
+        "time_seconds": 122.4,
+        "tokens": 44280,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Answers at the size of the question - no multi-section memo",
+          "passed": true,
+          "evidence": "8 headers but no memo structure"
+        },
+        {
+          "text": "Stays near the 400-600 word target",
+          "passed": false,
+          "evidence": "1020 words"
+        },
+        {
+          "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+          "passed": true,
+          "evidence": "Covers withholding and estate tax"
+        },
+        {
+          "text": "Gives a conditional recommendation rather than a hedge",
+          "passed": true,
+          "evidence": "Recommends VWRA with a switching-cost caveat"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": false,
+          "evidence": "Leaks 'Lei 14.754' and 'R$35'"
+        },
+        {
+          "text": "Verifies figures against issuer sources with a date stamp",
+          "passed": false,
+          "evidence": "Zero URLs; self-declared that all figures are from memory"
+        },
+        {
+          "text": "Offers to expand rather than pushing a memo",
+          "passed": false,
+          "evidence": "No offer to expand"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.286,
+        "passed": 2,
+        "failed": 5,
+        "total": 7,
+        "time_seconds": 145.2,
+        "tokens": 45720,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Recognises no regular contributions, so rebalancing means selling",
+          "passed": false,
+          "evidence": "Treats it as a standard rebalancing question; no recognition of the missing contribution lever"
+        },
+        {
+          "text": "Names the embedded FX gain as part of what a sale realises",
+          "passed": false,
+          "evidence": "No mention of embedded FX gain"
+        },
+        {
+          "text": "Recommends wide tolerance bands rather than tight ones",
+          "passed": false,
+          "evidence": "Recommends the conventional +/-5pp band - tighter, more taxable events"
+        },
+        {
+          "text": "Routes irregular top-ups to the underweight sleeve",
+          "passed": false,
+          "evidence": "No top-up routing guidance"
+        },
+        {
+          "text": "Explicitly rejects calendar rebalancing",
+          "passed": true,
+          "evidence": "Threshold triggers mentioned alongside semiannual monitoring"
+        },
+        {
+          "text": "Does not present contribution-based rebalancing as routinely available",
+          "passed": true,
+          "evidence": "Does not misapply contribution rebalancing"
+        },
+        {
+          "text": "States no specific Brazilian tax rates or thresholds",
+          "passed": false,
+          "evidence": "Leaks 'Lei 14.754', 'R$35,000'"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9523,
+        "stddev": 0.0826,
+        "min": 0.857,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 319.5333,
+        "stddev": 270.9452,
+        "min": 76.9,
+        "max": 611.9
+      },
+      "tokens": {
+        "mean": 95015.0,
+        "stddev": 54525.7499,
+        "min": 50288,
+        "max": 155754
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.3813,
+        "stddev": 0.0826,
+        "min": 0.286,
+        "max": 0.429
+      },
+      "time_seconds": {
+        "mean": 245.3667,
+        "stddev": 193.5751,
+        "min": 122.4,
+        "max": 468.5
+      },
+      "tokens": {
+        "mean": 56195.3333,
+        "stddev": 19404.2486,
+        "min": 44280,
+        "max": 78586
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.57",
+      "time_seconds": "+74.2",
+      "tokens": "+38820"
+    }
+  },
+  "notes": [
+    "METADATA CORRECTED 2026-08-05: runs_per_configuration is 1 (one run per eval\u00d7configuration). Spread figures in the summary are cross-eval variation, not multi-run stddev.",
+    "SCALING FIX CONFIRMED. Eval 1 went from 1411 words / 9 headers in iteration 1 to 876 words / 5 headers here, and is now shorter than the 1020-word baseline. Root cause was structural: the deep-dive and portfolio-construction specs sat inline in SKILL.md and pulled every answer toward depth. Moving them into references/analysis-methods.md removed the pull. Still above the 400-600 target, so partially fixed rather than solved.",
+    "PROFILE INVERSION HANDLED. Eval 2 is the new high-risk case: with no regular contributions, the universal advice 'rebalance with new money' is unavailable and following it would be wrong. The skill opened by naming exactly that, proposed +/-10pp bands against the conventional +/-5pp, and rejected calendar rebalancing in its first line. The baseline recommended the conventional +/-5pp semiannual approach - tighter bands and more taxable events, the opposite of correct here.",
+    "The embedded FX gain on a sale is the subtlest win. Only the skill run flagged that BRL depreciation over a holding period means the currency leg can exceed the asset gain in the BRL-reported figure. The baseline never mentioned it.",
+    "Brazilian tax-rate leakage: 0/3 with the skill, 3/3 without, across both iterations. Six for six on the baseline. This is the most consistent safety result in the whole exercise.",
+    "Verification continues to earn its cost: this round the skill caught that VWCE's May 2026 factsheet TER is superseded by its 28 July 2026 KID, and that a widely-cited AGGU ISIN actually belongs to the EUR-hedged line.",
+    "Cost: roughly 1.6x tokens and 1.5x wall-clock versus baseline, down from 2x in iteration 1 because short questions now stay short. Eval 2 with the skill was both cheaper and better than baseline - 50k tokens vs 46k for a materially more correct answer.",
+    "Remaining gap: eval 0's report did not explicitly reject calendar rebalancing, though it did propose band-based policy. Minor.",
+    "Still one run per configuration - deltas are directional, not significant."
+  ]
+}

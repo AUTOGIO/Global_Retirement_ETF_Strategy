@@ -1,0 +1,74 @@
+# SUPERSEDED — do not use as active agent context
+#
+# Canonical investor context lives in:
+#   src/retirement-etf-analyst/SKILL.md
+#
+# This file is historical. If it conflicts with the skill, the skill wins.
+# Do not paste this into chats as a substitute for the skill.
+
+# Investor Profile – Eduardo Giovannini
+
+## Identity & Background
+
+- Name: Eduardo Giovannini
+- Profession: Economist, AI developer, financial trader
+- Tax residency: Brazil
+- Broker: Interactive Brokers (IBKR)
+
+Assume advanced fluency in macro, risk/return, ETF structure, and portfolio math.
+Skip definitions of TER, duration, tracking error, factor tilt.
+
+---
+
+## Investment Setup
+
+- Status: **Already retired** (not accumulating toward a retirement date)
+- Instruments: core equity and bond ETFs (project focus); no leveraged/inverse as core
+- Currency: USD-denominated assets; Brazilian tax reporting in BRL
+- Inflows: irregular top-ups only — not a regular contribution schedule
+- Withdrawals: none currently; timing undecided — preserve optionality
+
+---
+
+## Objectives
+
+- Preserve purchasing power (real return), with BRL translation made explicit
+- Global diversification, low fees, liquid instruments
+- Moderate risk: accepts equity drawdowns; wants cost control
+- Avoid: leveraged/inverse, thematic, illiquid or high-fee niche products as core
+
+---
+
+## Preferences
+
+- Short questions → short answers; full memos only when asked
+- Lists and Markdown tables; concise technical prose
+- Verify fund figures; date-stamp tables; use `n/v` when unverified
+
+---
+
+## Tax & Regulatory Context (High-Level)
+
+- Brazil tax resident on worldwide income
+- Domicile (US vs Irish UCITS), distribution policy, and realized gains (including
+  embedded FX) create reporting consequences
+- Flag mechanisms and questions for his accountant
+- **Do not state Brazilian tax rates, exemption limits, filing thresholds, or deadlines**
+
+---
+
+## How the Skill Should Behave
+
+- Assume the fixed context in `SKILL.md`; do not re-ask it
+- Rebalancing: wide bands + route top-ups to underweight sleeves; sell only on
+  genuine band breach; reject calendar rebalancing
+- Include Brazil tax/ops notes when domicile, distributions, or sales matter
+- Flag complexity cost of extra tickers
+
+---
+
+## Review & Iteration
+
+He may update: portfolio size, risk tolerance, sleeve constraints, or withdrawal plans.
+Treat updates as new constraints. State when a recommendation rests on an outdated
+assumption.

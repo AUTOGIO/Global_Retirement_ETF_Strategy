@@ -1,0 +1,51 @@
+{
+  "eval_id": 0,
+  "eval_name": "eval-0-full-report-purchasing-power",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Produces all seven report sections",
+      "passed": false,
+      "evidence": "1/7 sections; invented a 16-section layout"
+    },
+    {
+      "text": "Treats this as a real-return mandate with inflation-linked exposure weighed on merit",
+      "passed": true,
+      "evidence": "Allocated 15% ITPS plus 10% gold - inflation exposure present"
+    },
+    {
+      "text": "States the BRL/USD gap explicitly rather than assuming it away",
+      "passed": true,
+      "evidence": "28 references; did name the IPCA gap"
+    },
+    {
+      "text": "Proposes band-based rebalancing using top-ups, not a calendar",
+      "passed": false,
+      "evidence": "No band policy; 5 passing band references only"
+    },
+    {
+      "text": "Sizes sleeves against the USD 200k figure",
+      "passed": true,
+      "evidence": "Sized against 200k"
+    },
+    {
+      "text": "States no specific Brazilian tax rates or thresholds",
+      "passed": false,
+      "evidence": "Leaks '15% flat', 'Lei 14.754', 'R$35,000', 'aliquota'"
+    },
+    {
+      "text": "Date-stamped tables, n/v for unverified fields, real source URLs",
+      "passed": false,
+      "evidence": "No date stamp, no n/v convention despite 19 URLs"
+    }
+  ],
+  "passed": 3,
+  "total": 7,
+  "pass_rate": 0.429,
+  "summary": {
+    "pass_rate": 0.429,
+    "passed": 3,
+    "failed": 4,
+    "total": 7
+  }
+}

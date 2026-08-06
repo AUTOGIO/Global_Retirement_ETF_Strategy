@@ -1,0 +1,51 @@
+{
+  "eval_id": 0,
+  "eval_name": "eval-0-full-report-3etf-core",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Produces all seven report sections (exec summary, investor context, shortlists, detailed notes, proposed portfolio, Brazil tax, action checklist)",
+      "passed": false,
+      "evidence": "Produced a 14-section structure of its own devising; only 1/7 expected sections matched"
+    },
+    {
+      "text": "Screening table carries an explicit 'data as of <date>' stamp",
+      "passed": false,
+      "evidence": "No date stamp anywhere in the document"
+    },
+    {
+      "text": "Allocation weights sum to 100%",
+      "passed": false,
+      "evidence": "No parseable allocation table with summing weights"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": false,
+      "evidence": "Leaks: 'Lei 14.754', '15% flat', 'R$2,500', 'R$250,000', 'R$35,000', 'carne-leao', 'US$1M threshold'"
+    },
+    {
+      "text": "Cites real source URLs",
+      "passed": true,
+      "evidence": "21 unique source URLs"
+    },
+    {
+      "text": "Marks unverified fields as n/v rather than guessing",
+      "passed": false,
+      "evidence": "Two data conflicts flagged in prose but no n/v convention; approximate figures published as fact"
+    },
+    {
+      "text": "Gives concrete drawdown figures rather than vague volatility language",
+      "passed": false,
+      "evidence": "No concrete drawdown range given"
+    }
+  ],
+  "passed": 1,
+  "total": 7,
+  "pass_rate": 0.143,
+  "summary": {
+    "pass_rate": 0.143,
+    "passed": 1,
+    "failed": 6,
+    "total": 7
+  }
+}

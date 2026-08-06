@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Node (if added later)
+node_modules/
+
+# Junk / scratch
+logs/
+tmp/
+*.log
+*.tmp
+.cache/
+
+# Editors / IDE
+.idea/
+*.swp
+*~
+
+# Cursor local memory (workspace-specific; not project source)
+.memory/

@@ -1,0 +1,51 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-casual-two-fund-comparison",
+  "configuration": "without_skill",
+  "expectations": [
+    {
+      "text": "Answers at the size of the question - does NOT produce the seven-section report",
+      "passed": true,
+      "evidence": "Short, no report structure"
+    },
+    {
+      "text": "Stays concise (under ~1000 words for a two-fund question)",
+      "passed": true,
+      "evidence": "841 words"
+    },
+    {
+      "text": "Addresses the US-domicile vs Irish UCITS trade-off",
+      "passed": true,
+      "evidence": "Covers the treaty/withholding and estate tax angle"
+    },
+    {
+      "text": "Gives a conditional recommendation rather than a hedge",
+      "passed": true,
+      "evidence": "Recommends VWCE via the VWRA USD line"
+    },
+    {
+      "text": "States no specific Brazilian tax rates, thresholds, or exemption figures",
+      "passed": false,
+      "evidence": "Leaks 'Lei 14.754' and 'R$35' as asserted tax facts"
+    },
+    {
+      "text": "Offers to expand rather than pushing a full memo",
+      "passed": false,
+      "evidence": "No offer to expand"
+    },
+    {
+      "text": "Verifies fund figures against issuer sources with a date stamp",
+      "passed": false,
+      "evidence": "Zero source URLs; all figures from memory, no date stamp"
+    }
+  ],
+  "passed": 4,
+  "total": 7,
+  "pass_rate": 0.571,
+  "summary": {
+    "pass_rate": 0.571,
+    "passed": 4,
+    "failed": 3,
+    "total": 7
+  }
+}
