@@ -31,6 +31,18 @@ Eval loop: prompts in `src/retirement-etf-analyst/evals/evals.json`; history und
 ./scripts/rebuild-skill.sh
 ```
 
+## Clone on another Mac
+
+Prefer cloning into `~/Documents/GitHub` on another Apple Silicon MacBook:
+
+```bash
+git clone https://github.com/AUTOGIO/Global_Retirement_ETF_Strategy.git
+```
+
+Open the folder in Cursor and follow `src/retirement-etf-analyst/SKILL.md`. Rebuild the skill with `./scripts/rebuild-skill.sh` if you edit the unpacked tree; it only needs stock macOS tools (`bash`, `rsync`, `zip`).
+
+Keep this repo private. It is intentionally portable, uses relative paths only, and should not contain Intel/x86-specific binaries or machine-specific absolute paths.
+
 ## Where things live
 
 | Path | Contents |
