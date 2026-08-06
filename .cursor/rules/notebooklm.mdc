@@ -1,0 +1,40 @@
+---
+description: NotebookLM integration for this repo — which notebook to query and when
+alwaysApply: true
+---
+
+# NotebookLM ↔ Cursor
+
+## Notebook
+
+- **Name:** `Global_Retirement_ETF_Strategy`
+- **URL:** https://notebook.google.com/notebook/e9ef0d28-6b83-41ca-889b-14f23078c8bc
+- **ID:** `e9ef0d28-6b83-41ca-889b-14f23078c8bc`
+
+MCP server: `notebooklm` (`npx -y notebooklm-mcp@latest` in `~/.cursor/mcp.json`). First use requires Google login in the MCP browser window; fully quit/relaunch Cursor after changing MCP config.
+
+**Auth gotcha:** if Google redirects to `notebook.google.com` but the MCP waiter only watches `notebooklm.google.com`, login never “completes.” Use CLI auth that accepts both hosts (details in `docs/notebooklm.md`). Live Q&A for this notebook has been verified authenticated.
+
+## When to call NotebookLM MCP
+
+- Synthesize across many uploaded sources (skill + memos + research playbooks)
+- Pull citation-backed summaries already refined in the notebook (allocation guide, checklist, standing prompts)
+- Cross-check a proposal against the notebook’s distilled notes before writing a long memo
+
+## When NOT to call NotebookLM
+
+- **Live fund figures** (TER, AUM, duration, yield): verify from issuer factsheets; date-stamp or write `n/v`. Never treat NotebookLM as the authority for numbers that change.
+- **File placement / repo layout:** follow `AGENTS.md`
+- **Day-to-day ETF analyst behavior:** follow `src/retirement-etf-analyst/SKILL.md` (+ its `references/`)
+
+## Conflict resolution
+
+1. `src/retirement-etf-analyst/SKILL.md` (+ references) wins for analysis policy
+2. `.cursor/rules/retirement-etf-brief.mdc` wins for durable portfolio constraints when MCP is offline
+3. NotebookLM answers are synthesis aids — cite them, do not override the skill on conflicts
+
+## Hygiene
+
+- Do not commit Google cookies, MCP auth state, or `.env` secrets
+- Keep this repo private; the notebook holds personal financial context
+- After material portfolio memo changes under `data/processed/`, refresh the brief (see `docs/notebooklm.md`)

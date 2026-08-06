@@ -19,6 +19,12 @@ If anything conflicts, the skill wins over `docs/prompts/`, `archive/`, and memo
 
 Shared rules (any tool): assume fixed investor context; verify fund figures from issuer factsheets (date-stamp / `n/v`); match answer depth to the question; quantify USD real return and BRL translation; band/top-up rebalancing (no calendar rebalancing); tax mechanisms only — never Brazilian rates; chat Markdown by default, saveables under `data/processed/`.
 
+### NotebookLM (optional synthesis layer)
+
+Dedicated notebook: [Global_Retirement_ETF_Strategy](https://notebook.google.com/notebook/e9ef0d28-6b83-41ca-889b-14f23078c8bc).  
+Cursor wiring (Method D): global MCP `notebooklm` in `~/.cursor/mcp.json`, plus `.cursor/rules/notebooklm.mdc` and `.cursor/rules/retirement-etf-brief.mdc`.  
+Standing prompts to upload: `docs/notebooklm-standing-prompts.md`. Full sync/refresh habit: [`docs/notebooklm.md`](docs/notebooklm.md). After a new `data/processed/` portfolio memo, refresh the brief rule.
+
 Eval loop: prompts in `src/retirement-etf-analyst/evals/evals.json`; history under `tests/eval-runs/` (see `docs/eval-runs.md`). No in-repo CI harness yet.
 
 ## How to use the skill
@@ -51,6 +57,9 @@ Keep this repo private. It is intentionally portable, uses relative paths only, 
 | `src/retirement-etf-analyst.skill` | Packaged zip (build artifact) |
 | `scripts/rebuild-skill.sh` | Rebuild the `.skill` package |
 | `docs/` | Guides, review HTML, eval notes |
+| `docs/notebooklm.md` | NotebookLM notebook link, MCP wiring, source sync / brief refresh |
+| `docs/notebooklm-standing-prompts.md` | Standing prompts to upload as a NotebookLM fonte |
+| `.cursor/rules/` | `notebooklm.mdc` + `retirement-etf-brief.mdc` (Cursor ↔ NotebookLM) |
 | `docs/etf-research-tools.md` | Discovery/overlap screener catalog (issuer still owns figures) |
 | `docs/etf-research-loop.md` | Weekly / monthly / bi-monthly research playbook (five tools + IBKR) |
 | `docs/prompts/` | Superseded historical prompts |

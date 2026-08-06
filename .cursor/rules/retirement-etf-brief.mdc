@@ -1,0 +1,56 @@
+---
+description: Durable engineering brief distilled from NotebookLM / portfolio memo — constraints for Cursor when MCP is offline
+alwaysApply: true
+---
+
+# Retirement ETF — Engineering Brief
+
+Distilled from `data/processed/portfolio-core-vwra-itps-aggu-2026-08-05.md` and `src/retirement-etf-analyst/SKILL.md` for NotebookLM hand-off. Refresh when the latest portfolio memo changes (see `docs/notebooklm.md`).
+
+## Investor constraints
+
+- Already retired (b. 19 Apr 1979); Brazil tax residency; spends in BRL
+- USD ~200k at Interactive Brokers; irregular top-ups; withdrawals undecided
+- Mandate: **preserve purchasing power** (USD real return + explicit BRL translation)
+- Universe: broad, liquid, low-TER equity / bond / inflation-linked ETFs
+- **Excluded:** leveraged, inverse, thematic, illiquid, high-fee niche products
+
+## Model A — Real Core (recommended)
+
+| Ticker | Sleeve | Target | Band | Role |
+|--------|--------|--------|------|------|
+| VWRA | Global equity (Irish UCITS Acc, LSE USD) | 60% | 50–70% | Growth |
+| ITPS | US TIPS (Irish UCITS Acc) | 25% | 18–32% | Contractual real return vs US CPI |
+| AGGU | Global agg USD-hedged (Irish UCITS Acc) | 15% | 9–21% | Nominal/credit diversifier |
+
+Blended TER ~12.4 bp. All three: Irish-domiciled, accumulating, USD LSE lines.
+
+## Rebalancing
+
+1. Route every irregular top-up to the most underweight sleeve first
+2. Wide bands as above; sell only on genuine breach, and only back to the **band edge**
+3. **No calendar rebalancing**
+4. Corrective sales realise USD gains **plus** embedded FX gains — flag tax cost; do not invent Brazilian rates
+
+## Hard truths (do not soft-pedal)
+
+- ITPS hedges **US CPI**, not IPCA; no USD ETF fully hedges Brazilian purchasing power (Tesouro IPCA+ is outside this account)
+- In a 2022-style inflationary shock, Model A lost ~15.6%; shifting equity weight buys little protection in that scenario
+- Prefer Irish UCITS Acc over US-listed cores (VT/SCHP/BNDW) for estate-tax / distribution structure — judgment call, not settled law
+
+## Tax — mechanisms only; ask accountant
+
+Never invent Brazilian tax rates or thresholds. Standing accountant questions:
+
+- Accumulating Irish UCITS reporting during hold vs distributing funds
+- Embedded FX gain treatment on rebalancing sales (rate conventions)
+- Timing of irregular top-ups
+- US estate-tax exposure if any US-situs holdings remain; does Irish UCITS eliminate vs reduce?
+- Whether accumulation changes income-vs-gain character on eventual realisation
+
+## Analysis rules (Cursor)
+
+- Match answer depth to the question; short → short
+- Verify live fund figures from issuer factsheets; date-stamp or `n/v`
+- Skill + this brief beat NotebookLM MCP on conflicts
+- Saveables under `data/processed/`; chat Markdown by default
