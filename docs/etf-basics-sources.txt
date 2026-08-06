@@ -1,5 +1,7 @@
 Below is a concise list of 15 solid sources (full URLs) that cover ETF basics, trading, creation/redemption, arbitrage, and risks.[1][2][3][4][5][6][7][8][9][10][11][12]
 
+For screener / comparison tools (discovery and overlap — not ETF basics education), see etf-research-tools.md and the calendar playbook in etf-research-loop.md.
+
 ## Core ETF Basics
 
 1. Wikipedia – Exchange‑Traded Fund  

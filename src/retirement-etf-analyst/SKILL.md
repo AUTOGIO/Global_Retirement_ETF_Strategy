@@ -110,3 +110,4 @@ Markdown in the conversation by default. Produce a file when he asks for somethi
 - `references/brazil-tax-ibkr.md` — tax dimensions, US vs UCITS, rebalancing-by-sale consequences, IBKR execution. Read when the analysis touches tax, domicile or order placement.
 - `references/etf-universe.md` — ticker starting points by asset class, no figures. Read at the start of any screening task.
 - Repo `docs/etf-research-tools.md` — discovery/overlap tool catalog (TrackInsight, ETF Research Center, etc.) and when to use each.
+- Repo `docs/etf-research-loop.md` — weekly / monthly / bi-monthly research playbook. Read when he asks to run a research loop or calendar review.

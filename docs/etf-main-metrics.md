@@ -2,6 +2,8 @@
 
 > **Authority note:** For live advice in this project, `src/retirement-etf-analyst/SKILL.md` and `references/brazil-tax-ibkr.md` supersede this document on tax. Do **not** assert Brazilian (or other) tax rates, exemption limits, or filing thresholds here or in answers — name mechanisms and route specifics to an accountant. Numeric rate examples below were removed for that reason.
 
+> **Research tooling:** Which external screeners help at each tier (discovery only — issuers still own the numbers): [`etf-research-tools.md`](etf-research-tools.md). Calendar cadence: [`etf-research-loop.md`](etf-research-loop.md).
+
 Here is a unified **ETF Due Diligence Framework** that merges structural completeness with execution-oriented pragmatism.  
 To make it immediately actionable, the metrics are organized into **four priority tiers**—starting with non-negotiable structural and tax dealbreakers, moving through the true costs of ownership and portfolio reality checks, and demoting backward-looking historical returns to the bottom as sanity checks.  
 **The Complete ETF Due Diligence Matrix**  
