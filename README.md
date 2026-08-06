@@ -39,6 +39,7 @@ Eval loop: prompts in `src/retirement-etf-analyst/evals/evals.json`; history und
 | `src/retirement-etf-analyst.skill` | Packaged zip (build artifact) |
 | `scripts/rebuild-skill.sh` | Rebuild the `.skill` package |
 | `docs/` | Guides, review HTML, eval notes |
+| `docs/etf-research-loop.md` | Weekly / monthly / bi-monthly research playbook (five tools + IBKR) |
 | `docs/prompts/` | Superseded historical prompts |
 | `docs/eval-runs.md` | How to read/reproduce eval artifacts |
 | `data/raw/` | Excel inputs |

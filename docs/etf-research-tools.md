@@ -29,11 +29,15 @@ See [`etf-main-metrics.md`](etf-main-metrics.md).
 
 ## Research loop (human)
 
+Single-pass pipeline when screening or trading:
+
 1. **Screen** — TrackInsight for UCITS / global; ETFdb or ETF.com only if the sleeve is US-listed.
 2. **Cut** — domicile, Acc vs Dist, liquidity, and project exclusions (leveraged, thematic, niche).
 3. **Overlap** — ETF Research Center when two or more equity funds are on the shortlist.
 4. **Verify** — every quoted figure on the issuer factsheet; note aggregator disagreements.
 5. **Execute** — IBKR: listing venue, trading currency, live spread and NAV premium before the order.
+
+**Calendar playbook** (weekly / monthly / bi-monthly — which tools to open when): [`etf-research-loop.md`](etf-research-loop.md).
 
 ## Relationship to the skill
 
