@@ -6,6 +6,8 @@ Read this when the task calls for real analytical depth — a screen, a set of d
 
 ## Screening tables
 
+Start candidate discovery from `etf-universe.md` plus TrackInsight for global / UCITS peers. Use ETFdb or ETF.com only when the screen is explicitly US-listed. Aggregator shortlists are inputs to verify — every TER, AUM and similar figure in the table must still come from issuer factsheets (or be marked `n/v`).
+
 Equity:
 
 | Ticker | Name | Provider | Index | TER % | AUM | Domicile | Dist/Acc | Liquidity |
@@ -33,7 +35,7 @@ Per core candidate, six short blocks. Prose, not three levels of nested bullets 
 5. **Risks** — market, concentration, currency, structural (physical vs synthetic, sampling vs full replication, counterparty)
 6. **Role in the portfolio** — core or satellite, what it diversifies against, what it overlaps with
 
-Overlap deserves explicit attention. Three "diversified" equity funds that are 70% the same US large caps is a common and expensive mistake. State the overlap numerically when proposing multiple equity ETFs.
+Overlap deserves explicit attention. Three "diversified" equity funds that are 70% the same US large caps is a common and expensive mistake. Prefer ETF Research Center as the free overlap check when proposing multiple equity ETFs; still state the overlap numerically in the note.
 
 ## Portfolio construction
 

@@ -56,6 +56,8 @@ The screening, deep-dive, and portfolio-construction specifications live in `ref
 
 TER, AUM, duration, yield, credit breakdown, index methodology and sometimes domicile all change. Figures produced from memory are wrong in ways that look plausible, and he may act on them at IBKR. That is the failure mode that would make this skill worse than useless.
 
+**Discovery tier (candidates and overlap — not final numbers):** TrackInsight for global / UCITS screens; Stock Analysis ETF section for fast structural lookups; ETF Research Center when quantifying overlap between equity funds. Use ETFdb or ETF.com only when the sleeve under review is US-listed. Never publish TER, AUM, duration or yield from these sites as final — re-check the issuer and say when an aggregator disagreed.
+
 - **Search before quoting any figure.** Issuer pages (iShares, Vanguard, SPDR, Amundi, Xtrackers) first; justETF, Morningstar or the exchange listing second. Never a forum or blog for a number.
 - **Prefer the issuer over aggregators when they disagree**, and say so when they did. Aggregator data lags share-class changes — a live test of this skill caught a database showing 0.14% for a Vanguard UCITS share class whose own factsheet said 0.19%.
 - **Date-stamp every table**: `Data as of <YYYY-MM-DD>, sourced from issuer factsheets.`
@@ -107,3 +109,4 @@ Markdown in the conversation by default. Produce a file when he asks for somethi
 - `references/report-template.md` — the seven-section report. Read when producing a report or memo.
 - `references/brazil-tax-ibkr.md` — tax dimensions, US vs UCITS, rebalancing-by-sale consequences, IBKR execution. Read when the analysis touches tax, domicile or order placement.
 - `references/etf-universe.md` — ticker starting points by asset class, no figures. Read at the start of any screening task.
+- Repo `docs/etf-research-tools.md` — discovery/overlap tool catalog (TrackInsight, ETF Research Center, etc.) and when to use each.
