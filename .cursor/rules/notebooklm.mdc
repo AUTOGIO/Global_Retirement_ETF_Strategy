@@ -38,3 +38,4 @@ MCP server: `notebooklm` (`npx -y notebooklm-mcp@latest` in `~/.cursor/mcp.json`
 - Do not commit Google cookies, MCP auth state, or `.env` secrets
 - Keep this repo private; the notebook holds personal financial context
 - After material portfolio memo changes under `data/processed/`, refresh the brief (see `docs/notebooklm.md`)
+- Reusable playbook for other repos: `docs/cursor-notebooklm-wiring-guide.md`

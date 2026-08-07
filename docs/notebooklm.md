@@ -1,5 +1,7 @@
 # NotebookLM ↔ this repo
 
+**Reusable wiring playbook (any project):** [`cursor-notebooklm-wiring-guide.md`](cursor-notebooklm-wiring-guide.md).
+
 Dedicated notebook: [Global_Retirement_ETF_Strategy](https://notebook.google.com/notebook/e9ef0d28-6b83-41ca-889b-14f23078c8bc)  
 ID: `e9ef0d28-6b83-41ca-889b-14f23078c8bc`
 

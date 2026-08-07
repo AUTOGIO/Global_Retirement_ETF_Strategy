@@ -23,7 +23,8 @@ Shared rules (any tool): assume fixed investor context; verify fund figures from
 
 Dedicated notebook: [Global_Retirement_ETF_Strategy](https://notebook.google.com/notebook/e9ef0d28-6b83-41ca-889b-14f23078c8bc).  
 Cursor wiring (Method D): global MCP `notebooklm` in `~/.cursor/mcp.json`, plus `.cursor/rules/notebooklm.mdc` and `.cursor/rules/retirement-etf-brief.mdc`.  
-Standing prompts to upload: `docs/notebooklm-standing-prompts.md`. Full sync/refresh habit: [`docs/notebooklm.md`](docs/notebooklm.md). After a new `data/processed/` portfolio memo, refresh the brief rule.
+Standing prompts to upload: `docs/notebooklm-standing-prompts.md`. Full sync/refresh habit: [`docs/notebooklm.md`](docs/notebooklm.md). After a new `data/processed/` portfolio memo, refresh the brief rule.  
+**Copy to other repos:** [`docs/cursor-notebooklm-wiring-guide.md`](docs/cursor-notebooklm-wiring-guide.md).
 
 Eval loop: prompts in `src/retirement-etf-analyst/evals/evals.json`; history under `tests/eval-runs/` (see `docs/eval-runs.md`). No in-repo CI harness yet.
 
@@ -57,7 +58,8 @@ Keep this repo private. It is intentionally portable, uses relative paths only, 
 | `src/retirement-etf-analyst.skill` | Packaged zip (build artifact) |
 | `scripts/rebuild-skill.sh` | Rebuild the `.skill` package |
 | `docs/` | Guides, review HTML, eval notes |
-| `docs/notebooklm.md` | NotebookLM notebook link, MCP wiring, source sync / brief refresh |
+| `docs/cursor-notebooklm-wiring-guide.md` | Reusable Cursor ↔ NotebookLM wiring guide (any repo) |
+| `docs/notebooklm.md` | This repo’s notebook link, MCP wiring, source sync / brief refresh |
 | `docs/notebooklm-standing-prompts.md` | Standing prompts to upload as a NotebookLM fonte |
 | `.cursor/rules/` | `notebooklm.mdc` + `retirement-etf-brief.mdc` (Cursor ↔ NotebookLM) |
 | `docs/etf-research-tools.md` | Discovery/overlap screener catalog (issuer still owns figures) |
