@@ -5,7 +5,7 @@
       "id": 0,
       "name": "full-report-purchasing-power",
       "prompt": "Build me a core ETF portfolio for the USD 200k. I'm already retired, not taking withdrawals, and the goal is keeping purchasing power over the long run. Full report I can save.",
-      "expected_output": "Seven-section report. Must treat this as a real-return mandate (inflation-linked exposure considered on merit, not as an afterthought), state the BRL/USD gap explicitly, propose a rebalancing policy based on bands and top-ups rather than a calendar, size sleeves against USD 200k, and avoid any specific Brazilian tax rates. Date-stamped tables, n/v for unverified fields, real source URLs.",
+      "expected_output": "Seven-section report. Must treat this as a real-return mandate (inflation-linked exposure considered on merit, not as an afterthought), state expected USD real return against US CPI with no BRL translation or IPCA comparison, propose a rebalancing policy based on bands and top-ups rather than a calendar, size sleeves against USD 200k, and avoid any specific Brazilian tax rates. Date-stamped tables, n/v for unverified fields, real source URLs.",
       "files": []
     },
     {
@@ -19,7 +19,7 @@
       "id": 2,
       "name": "rebalancing-no-contributions",
       "prompt": "My equity sleeve has drifted up a fair bit after this year's run. Should I rebalance back to target, and how often should I be doing this generally?",
-      "expected_output": "Must recognise he has no regular contributions, so rebalancing means selling and realising gains plus embedded FX gains. Should recommend wide tolerance bands, deploying irregular top-ups to the underweight sleeve, and selling only on a genuine band breach. Should explicitly reject calendar rebalancing. Must not recommend contribution-based rebalancing as though it were routinely available. No specific Brazilian tax rates.",
+      "expected_output": "Must recognise he has no regular contributions, so rebalancing means selling and realising gains. Should recommend wide tolerance bands, deploying irregular top-ups to the underweight sleeve, and selling only on a genuine band breach. Should explicitly reject calendar rebalancing. Must not recommend contribution-based rebalancing as though it were routinely available. No specific Brazilian tax rates.",
       "files": []
     }
   ]

@@ -14,7 +14,7 @@ Lead with the decision, not the process. Not "I screened 14 global equity ETFs a
 
 ## 2. Investor context
 
-Two to four lines. Brazil tax residency, IBKR, already retired with no withdrawals yet, purchasing-power mandate, USD 200k base with irregular top-ups — plus whatever is specific to *this* request: the constraint he imposed, the assumption you had to make. The purpose is that when he rereads this in eighteen months he knows what inputs produced it.
+Two to four lines. Brazil tax residency, IBKR, already retired with no withdrawals yet, USD purchasing-power mandate (benchmark: US CPI), USD 200k base with irregular top-ups — plus whatever is specific to *this* request: the constraint he imposed, the assumption you had to make. The purpose is that when he rereads this in eighteen months he knows what inputs produced it.
 
 State assumptions explicitly here if parameters were missing.
 
@@ -44,7 +44,7 @@ One subsection per core candidate. Six blocks each:
 - **Portfolio characteristics** — equities: region/sector weights, top-10 concentration, effective breadth. Bonds: effective duration, credit distribution, govt/corp split, hedging
 - **Costs and tracking** — TER and, where obtainable, tracking difference over 1 and 3 years. Note securities lending policy if disclosed.
 - **Liquidity and IBKR implementation** — exchange, currency, typical spread, order type guidance
-- **Risks** — market, concentration, currency, structural
+- **Risks** — market, concentration, currency exposure relative to USD, structural
 - **Role in portfolio** — core or satellite, what it diversifies, what it overlaps
 
 Keep each block to a few sentences. This section is a reference he returns to, not an essay.
@@ -60,16 +60,16 @@ Weights must sum to 100%. Include the USD amount against the current portfolio v
 
 - **Diversification** — geographic and asset-class coverage, and the overlap between holdings stated numerically where you can
 - **Drawdown behavior** — a concrete range for an equity-crisis scenario, plus the case where the bond sleeve fails to help (correlated inflationary shock). Vague reassurance here is the least useful thing you can write.
-- **Real return and the FX gap** — expected USD real return against US CPI, and the BRL translation stated alongside it. He asked for the currency gap made visible rather than assumed away.
+- **Real return** — expected **USD** real return against US CPI, with the inflation assumption stated inline. No BRL translation and no IPCA comparison: the mandate is USD purchasing power.
 - **Rebalancing policy** — tolerance bands, how irregular top-ups get deployed, and what a corrective sale would realize. Not a calendar.
 - **Long-term suitability** — why this survives decades of holding, and what it looks like under both "withdrawals never start" and "withdrawals begin in ten years," since that is undecided
-- **Complexity cost** — number of tickers, FX events, and reporting lines this creates versus the simpler alternative
+- **Complexity cost** — number of tickers and reporting lines this creates versus the simpler alternative
 
 ## 6. Brazil tax and operational considerations
 
 High-level only. Read `brazil-tax-ibkr.md` before writing this section.
 
-Cover the dimensions that this specific portfolio creates: domicile of each holding, whether distributions or accumulation drive the reporting burden, FX conversion points, and which decisions have tax consequences he should verify.
+Cover the dimensions that this specific portfolio creates: domicile of each holding, whether distributions or accumulation drive the reporting burden, and which decisions have tax consequences he should verify.
 
 No rates. No thresholds. No exemption figures. Name the mechanism, flag what needs his accountant's confirmation.
 

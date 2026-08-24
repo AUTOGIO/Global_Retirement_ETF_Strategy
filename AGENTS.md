@@ -11,9 +11,11 @@ Personal project: Global Retirement ETF Strategy (data/analytics + Cursor skill)
 | `config/` | Non-secret settings — create when needed |
 | `data/` | CSV, Excel, exports, raw inputs; saved portfolio memos under `data/processed/` |
 | `assets/` | Images, icons, logos — create when needed |
-| `docs/` | Guides, design notes; AI prompts go in `docs/prompts/` (not analysis memos) |
+| `docs/` | Guides, design notes, and the canonical objective (`portfolio-architecture.md`). Not analysis memos — those go in `data/processed/` |
 | `tests/` | Tests and eval runs only |
 | `archive/` | Obsolete files kept for reference (do not delete casually) |
+
+**Canonical objective:** `docs/portfolio-architecture.md` — read it before proposing any allocation. The mandate is **USD purchasing power vs US CPI**; BRL translation, IPCA benchmarks and Brazilian assets are out of scope, and Brazil enters only as a tax/structure input.
 
 ## Root
 

@@ -8,7 +8,8 @@ Human + agent playbook for periodic portfolio review using the five discovery to
 
 Tool catalog and Screen → Cut → Overlap → Verify → Execute steps: [`etf-research-tools.md`](etf-research-tools.md). Metric tiers: [`etf-main-metrics.md`](etf-main-metrics.md).
 
-Current core target (example): [`data/processed/portfolio-core-vwra-itps-aggu-2026-08-05.md`](../data/processed/portfolio-core-vwra-itps-aggu-2026-08-05.md).
+Objective and both live sleeves: [`docs/portfolio-architecture.md`](portfolio-architecture.md).  
+Current real-return core target: [`data/processed/portfolio-core-vwra-itps-aggu-2026-08-18.md`](../data/processed/portfolio-core-vwra-itps-aggu-2026-08-18.md).
 
 ---
 
@@ -38,11 +39,11 @@ Default outcome at every cadence: **hold / no trade**.
 
 ## Weekly (~15–20 min) — no five-tool screen
 
-**Inputs:** IBKR portfolio weights, cash, pending FX; current target allocation.
+**Inputs:** IBKR portfolio weights and cash; current target allocation.
 
 **Checks:**
 
-1. Sleeve weights vs **wide** tolerance bands — note drift; recommend a sale only on genuine breach (state realisation / embedded FX cost).
+1. Sleeve weights vs **wide** tolerance bands — note drift; recommend a sale only on genuine breach (state what the realisation costs).
 2. Cash or irregular top-up — if deploying, route to the most underweight sleeve.
 3. IBKR glance — trading permissions, settled cash, anything blocking an order.
 
@@ -90,7 +91,7 @@ This is where the five tools earn their keep. Follow Screen → Cut → Overlap 
 - “Run the monthly holdings check for the current core.”
 - “Run the bi-monthly peer check for the equity / bond / IL sleeves.”
 
-Agents must match answer depth to the cadence (weekly = short; bi-monthly peer compare = table + tight prose, not a nine-header memo unless asked). Do not state Brazilian tax rates.
+Agents must match answer depth to the cadence (weekly = short; bi-monthly peer compare = table + tight prose, not a nine-header memo unless asked). Do not state Brazilian tax rates. Measure everything in USD against US CPI — no BRL translation, no IPCA comparison.
 
 ---
 

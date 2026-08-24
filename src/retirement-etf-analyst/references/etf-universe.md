@@ -59,7 +59,7 @@ Note when screening: FTSE and MSCI classify South Korea differently. This is a r
 | AGGU / AGGG | Ireland | iShares Global Aggregate — AGGU USD-hedged, AGGG distributing. Verify which is which. |
 | VAGU / VAGF | Ireland | Vanguard Global Aggregate, hedged variants |
 
-Currency hedging is the first question for any global bond sleeve, not an afterthought. Unhedged foreign bonds import FX volatility that can exceed the credit and duration risk they were bought for — which usually defeats the purpose of holding them as the portfolio's stabilizer.
+Currency hedging is the first question for any global bond sleeve, not an afterthought. Unhedged foreign bonds import currency volatility against USD that can exceed the credit and duration risk they were bought for — which usually defeats the purpose of holding them as the portfolio's stabilizer. Hedge to USD.
 
 ## US treasuries and aggregate
 
@@ -83,7 +83,7 @@ Under a purchasing-power mandate this is a core category, not a satellite. Nomin
 | IGIL | Ireland | Global inflation-linked, USD-hedged |
 | ITPS / TIP5 | Ireland | US TIPS in UCITS wrapper — verify current tickers and share classes |
 
-The honest limitation, which belongs in any proposal that includes these: **TIPS hedge US CPI, not Brazilian IPCA.** They protect the USD purchasing power of the portfolio. If BRL purchasing power is the binding constraint, the instrument that addresses it is Tesouro IPCA+, held in Brazil, outside this portfolio. Say this rather than implying a global inflation-linked ETF closes the gap.
+The scope note that belongs in any proposal including these: **TIPS hedge US CPI**, which is exactly the mandate — they protect the USD purchasing power of the portfolio and nothing else. Do not extend the claim to any other price index, and do not propose non-USD or Brazilian instruments as a complement.
 
 ---
 

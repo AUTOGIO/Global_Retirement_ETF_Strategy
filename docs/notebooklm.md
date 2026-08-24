@@ -49,7 +49,7 @@ Project rules: `.cursor/rules/notebooklm.mdc` (which notebook / when to call MCP
 | Latest `data/processed/*.md` memo | Current portfolio state |
 | `docs/notebooklm-standing-prompts.md` | Operating contract |
 
-**Skip:** `docs/prompts/`, `tests/eval-runs/`, `archive/`.
+**Skip:** `archive/`.
 
 ## Refresh the Cursor brief
 

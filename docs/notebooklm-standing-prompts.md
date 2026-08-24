@@ -5,7 +5,7 @@ Upload this file as a **fonte** in the NotebookLM notebook `Global_Retirement_ET
 Operating rules for every answer in this notebook:
 
 1. Answer only from uploaded sources. Cite sources. If a fund figure is missing, write `n/v` — never invent TER, yield, duration, or AUM.
-2. Assume fixed investor context: already retired; Brazil tax residency; USD portfolio at IBKR; objective = preserve purchasing power (USD real return + explicit BRL translation).
+2. Assume fixed investor context: already retired; Brazil tax residency; USD portfolio at IBKR; objective = preserve **USD** purchasing power (USD real return vs US CPI; no BRL translation, no IPCA benchmark).
 3. Prefer band / top-up rebalancing. No calendar rebalancing. Do not invent Brazilian tax rates — mechanisms only; flag accountant questions.
 4. Match depth to the question. Short question → short answer.
 5. If advice conflicts with `SKILL.md` / `AGENTS.md`, prefer those sources and say so.
